@@ -166,6 +166,16 @@ Note: ASG creates instances, ALB just routes traffic to them.
         
         ASG does NOT expose IPs
    2. terraform init, plan and apply
+  
+5. create ALB, target group, listener:
+   1. output alb dns name  ->  used to test "/health" and "/cpu"
+   2. output target group arn  ->   later used by asg
+  
+6. create iam role for ec2
+
+7. launch template
+
+
       
 
 
